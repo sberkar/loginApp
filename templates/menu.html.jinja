@@ -1,0 +1,29 @@
+<header class="menu">
+
+      
+      <div class="logo-menu">
+        <a href="/"><h2>LoginApp</h2></a>
+      </div>
+      <div class="other-menu">
+        <ul class="" id="loggedin" style="display: none">
+          <a href="/creds"><li>Credentials To Access DB</li></a>
+          <a href="/account"><li>Account</li></a>
+        </ul>
+        <ul id="loggedout" style="display: none;">
+          <a href="/register"><li>Register</li></a>
+          <a href="/login"><li>Login</li></a>
+        </ul>
+      </div>
+      <script>
+      const isLoggedInMenu = document.getElementById("loggedin")
+      const isLoggedOutMenu = document.getElementById("loggedout")
+      const isLoggedIn = localStorage.getItem('atoken')
+
+      fetch("/jwt/verify", {
+        method: "GET",
+        headers: {
+          Authorization: 'Bearer ' + isLoggedIn
+        }
+      }).then(res => res.json().then(data => data?isLoggedInMenu.style.display = "flex":isLoggedOutMenu.style.display = "flex"))
+      </script>
+</header>

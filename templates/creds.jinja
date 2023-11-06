@@ -1,0 +1,17 @@
+{% include 'header.jinja' %}
+    <title>
+        Credentials - LoginApp 
+    </title>
+    <script src="/static/js/index.js" defer></script>
+</head>
+<body>
+    {% include 'menu.html.jinja' %}
+    <main class="login-page">
+        <div>
+            <div class="creds-field">Username: secretuser{{ uid }}</div>
+            <div class="creds-field">Password: {{ passwd }}</div>
+            <div class="creds-field">DataBase: prodApp</div>
+        </div> 
+    </main>
+
+{% include 'footer.jinja' %}

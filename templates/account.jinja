@@ -1,0 +1,28 @@
+{% include 'header.jinja' %}
+    <title>
+        Account - LoginApp 
+    </title>
+    <script src="/static/js/index.js" defer></script>
+</head>
+<body>
+    {% include 'menu.html.jinja' %}
+    <main class="login-page">
+        <div id="ulogo" class="user-logo acc-field">
+
+        </div>
+        <div class="acc-container">
+          <div class="acc-label">Name:&nbsp;</div><div class="acc-field" id="uname"></div> 
+        </div>
+        <div class="acc-container">
+        <div class="acc-label">Email:&nbsp;</div> 
+         <div class="acc-field" id="uemail">
+        </div>
+        </div>
+        <div class="acc-container">
+            <div class="acc-field">
+                <button class="logout" id="logout">Logout</button> 
+            </div>
+        </div>
+    </main>
+    <script src="/static/js/account.js" defer></script>
+{% include 'footer.jinja' %}

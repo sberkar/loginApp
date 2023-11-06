@@ -1,0 +1,24 @@
+    {% include 'header.jinja' %}
+    <title>Register - LoginApp</title>
+    <script src="/static/js/register.js" defer> </script>
+</head>
+<body>
+    {% include 'menu.html.jinja' %}
+    <main class="login-page">
+        <form id="regForm" class="loginForm">
+            <h2>Register</h2>
+            <div>
+                <input placeholder="Enter Name" type="text" name="name" id="name">
+            </div>
+            <div>
+                <input placeholder="Enter Email" type="email" name="email" id="email">
+            </div>
+            <div>
+                <input placeholder="Enter Password" type="password" name="password" id="password">
+            </div>
+            <div>
+                <input class="btn-submit" type="submit" value="Register">
+            </div>
+        </form>
+    </main>
+    {% include 'footer.jinja' %}

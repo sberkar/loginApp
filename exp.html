@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - LoginApp</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      a {
+        color: rgb(21, 21, 108);
+        font-size: 1rem;
+        text-decoration: none;
+      }
+      .menu {
+        padding: 8px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-menu h2 {
+        font-size: 1.5rem;
+      }
+      .logo-menu h2::first-letter {
+        color: blue;
+        font-size: 1.7rem;
+      }
+      .other-menu ul {
+        display: flex;
+        list-style-type: none;
+      }
+      .other-menu ul li {
+        margin: 0 16px;
+      }
+
+      .login-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 100px;
+      }
+      #loginForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+      }
+      #loginForm h2 {
+        font-size: 2rem;
+        margin: 20px 0;
+      }
+      #loginForm div {
+        margin: 5px 0;
+        width: 100%;
+      }
+      #loginForm div input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        padding: 2px 4px;
+        font-size: 1.2rem;
+      }
+      #loginForm div input::placeholder {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      .btn-submit {
+        background-color: #00f;
+        color: white;
+        font-weight: 500;
+      }
+      body {
+        position: relative;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="menu">
+      <div class="logo-menu">
+        <h2>LoginApp</h2>
+      </div>
+      <div class="other-menu">
+        <ul class="" id="loggedin" style="display: none">
+          <a href="/creds"><li>Credentials To Access DB</li></a>
+          <a href="/account"><li>Account</li></a>
+        </ul>
+        <ul id="loggedout">
+          <a href="/register"><li>Register</li></a>
+          <a href="/login"><li>Login</li></a>
+        </ul>
+      </div>
+    </header>
+    <main class="login-page">
+      <form
+        id="loginForm"
+        data-dashlane-rid="77d9069ce7a2cf0f"
+        data-form-type="login"
+      >
+        <h2>Login</h2>
+        <div>
+          <input
+            placeholder="Enter Email"
+            type="email"
+            name="email"
+            id="email"
+            data-dashlane-rid="9a0c5a93347901b5"
+            data-form-type="email"
+            data-kwimpalastatus="alive"
+            data-kwimpalaid="1697975806669-0"
+          />
+        </div>
+        <div>
+          <input
+            placeholder="Enter Password"
+            type="password"
+            name="password"
+            id="password"
+            data-dashlane-rid="6348ccbd8779dcf1"
+            data-form-type="password"
+            data-kwimpalastatus="alive"
+            data-kwimpalaid="1697975806669-1"
+          />
+        </div>
+        <div>
+          <input
+            class="btn-submit"
+            type="submit"
+            value="Login"
+            data-dashlane-rid="92ff6e320de7b744"
+            data-form-type="action,login"
+            data-kwimpalastatus="dead"
+          />
+        </div>
+      </form>
+    </main>
+    <script src="/static/js/login.js"></script>
+    <footer>© LoginApp Inc</footer>
+  </body>
+</html>

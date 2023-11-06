@@ -1,0 +1,142 @@
+* {
+  font-family: sans-serif;
+}
+a {
+  color: rgb(21, 21, 108);
+  font-size: 1rem;
+  text-decoration: none;
+}
+.menu {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-menu h2 {
+  font-size: 1.5rem;
+}
+.logo-menu h2::first-letter {
+  color: blue;
+  font-size: 1.7rem;
+}
+.other-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+.other-menu ul li {
+  margin: 0 16px;
+  font-size: 1.2rem;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+  margin-bottom: 100px;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+}
+.loginForm h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.loginForm div {
+  margin: 5px 0;
+  width: 100%;
+}
+.loginForm div input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 2px 4px;
+  font-size: 1.2rem;
+}
+.loginForm div input::placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.btn-submit {
+  background-color: #00f;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  padding: 2px 4px;
+}
+.hero {
+  transform: skew(-20deg, 0deg);
+  background-color: #0bf;
+  color: #fff;
+  padding: 50px 100px;
+  width: 90%;
+}
+.hero * {
+  transform: skew(20deg, 0deg);
+}
+.hero h2 {
+  font-size: 3rem;
+}
+.hero button {
+  height: 50px;
+  margin-left: 30px;
+  padding: 4px 8px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 10px;
+}
+body {
+  position: relative;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.creds-field {
+  margin: 20px 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.acc-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.acc-field {
+  margin: 5px 0;
+}
+.user-logo {
+  padding: 16px 30px;
+  background-color: #00f;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.logout {
+  background-color: #f00;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  border: none;
+}
